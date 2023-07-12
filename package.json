@@ -1,0 +1,30 @@
+{
+  "name": "projet_serveur_node",
+  "version": "1.0.0",
+  "description": "Exemple de serveur node",
+  "main": "serveur.js",
+  "scripts": {
+    "build": "npx tsc",
+    "dev": "nodemon --watch ./ -e ts --exec ts-node --esm ./serveur.js",
+    "start": "npm run build && npm run dev"
+  },
+  "author": "El hadi FELFOUL",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "app": "^0.1.0",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "get-style-property": "^0.1.1",
+    "http": "^0.0.1-security",
+    "mysql2": "^3.1.2",
+    "path": "^0.12.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/multer": "^1.4.7",
+    "nodemon": "^3.0.1"
+  }
+}
