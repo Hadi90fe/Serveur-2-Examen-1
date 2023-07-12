@@ -15,9 +15,9 @@ import { Ctl_Films_gestionActions } from "./app/src/serveur/Film/controleurFilm"
 
 const exp = express();
 const serveur = http.createServer(exp);
-// const porte = 8080;
-serveur.listen(); // Famille des 8080-8888
-// console.log(`\nServeur démarré sur le port ${porte}`);
+const porte = 8080;
+serveur.listen(porte); // Famille des 8080-8888
+console.log(`\nServeur démarré sur le port ${porte}`);
 
 // Pour obtenir les ressources statiques css, js, images, ...
 // qui partiront avec vos pages web via les balises link, script, <img src=

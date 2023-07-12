@@ -16,9 +16,9 @@ const controleurFilm_1 = require("./app/src/serveur/Film/controleurFilm");
 // et sortantes sont gérées par express.
 const exp = (0, express_1.default)();
 const serveur = http_1.default.createServer(exp);
-// const porte = 8080;
-serveur.listen(); // Famille des 8080-8888
-// console.log(`\nServeur démarré sur le port ${porte}`);
+const porte = 8080;
+serveur.listen(porte); // Famille des 8080-8888
+console.log(`\nServeur démarré sur le port ${porte}`);
 // Pour obtenir les ressources statiques css, js, images, ...
 // qui partiront avec vos pages web via les balises link, script, <img src=
 const clientFolderPath = path_1.default.join(__dirname, 'app', 'src', 'client');
